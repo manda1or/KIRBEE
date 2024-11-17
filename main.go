@@ -70,7 +70,7 @@ func CalculatePositions(tles []map[string]string) ([]SatelliteData, error) {
 	return positions, nil
 }
 
-// Example TLEs
+// Example TLE using ISS
 func getExampleTLEs() []map[string]string {
 	return []map[string]string{
 		{
