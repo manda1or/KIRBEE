@@ -2,7 +2,7 @@ import requests
 import json
 
 def fetch_tles():
-    # Replace with your actual Space-Track credentials
+    # Space-Track credentials
     username = "robertjauregui00@outlook.com"
     password = "JSCHackPassTest!"
     url = "https://www.space-track.org/ajaxauth/login"
