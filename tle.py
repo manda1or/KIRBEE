@@ -1,10 +1,14 @@
 import requests
-import json
+import json 
+from dotenv import load_dotenv
+
+load_dotenv()
+
+# import credentials from .env
+username = os.getenv('SPACE_USER')
+password = os.getenv('SPACE_PASSWORD')
 
 def fetch_tles():
-    # Space-Track credentials
-    username = "robertjauregui00@outlook.com"
-    password = "JSCHackPassTest!"
     url = "https://www.space-track.org/ajaxauth/login"
     query = "https://www.space-track.org/basicspacedata/query/class/tle_latest/ORDINAL/1/DECAYED/false/PERIOD/<128/format/json"
 
